@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Self-supervised learning for interventional image analytics: toward robust device trackers</title>
+  <title>A Novel Tracking Framework for Devices in X-ray Leveraging Supplementary Cue-Driven Self-Supervised Features</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Self-supervised learning for interventional image
-analytics: toward robust device trackers</h1>
+            <h1 class="title is-1 publication-title">A Novel Tracking Framework for Devices in X-ray Leveraging Supplementary Cue-Driven Self-Supervised Features</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href=https://scholar.google.com/citations?user=DKeJKbQAAAAJ&hl=en target="_blank">Saahil Islam</a></span>
+                <a href=https://scholar.google.com/citations?user=DKeJKbQAAAAJ&hl=en target="_blank">Saahil Islam</a>,</span>
                 <span class="author-block">
-                  <a href=https://scholar.google.co.in/citations?user=0mtKywkAAAAJ&hl=en target="_blank">Venkatesh N. Murthy</a></span>
+                  <a href=https://scholar.google.co.in/citations?user=0mtKywkAAAAJ&hl=en target="_blank">Venkatesh N. Murthy</a>,</span>
                   <span class="author-block">
-                    <a href=https://scholar.google.de/citations?user=d9_kEEsAAAAJ&hl=en target="_blank">Dominik Neumann</a>
+                    <a href=https://scholar.google.de/citations?user=d9_kEEsAAAAJ&hl=en target="_blank">Dominik Neumann</a>,
                   </span>
                   <span class="author-block">
-                    <a href=https://scholar.google.co.in/citations?user=FSoLHSEAAAAJ&hl=en&oi=ao target="_blank">Badhan Kumar Das</a>
+                    <a href=https://scholar.google.com/citations?user=HrSCzG8AAAAJ&hl=en target="_blank">Serkan Cimen</a>,
                   </span>
                   <span class="author-block">
-                    <a href=https://scholar.google.co.in/citations?user=SFFdA1MAAAAJ&hl=en&oi=ao target="_blank">Puneet Sharma</a>
+                    <a href=https://scholar.google.co.in/citations?user=SFFdA1MAAAAJ&hl=en&oi=ao target="_blank">Puneet Sharma</a>,
                   </span>
                   <span class="author-block">
-                    <a href=https://lme.tf.fau.de/person/maier/ target="_blank">Andreas Maier</a>
+                    <a href=https://lme.tf.fau.de/person/maier/ target="_blank">Andreas Maier</a>,
                   </span>
                   <span class="author-block">
-                    <a href=https://comaniciu.net/ target="_blank">Dorin Comaniciu</a>
+                    <a href=https://comaniciu.net/ target="_blank">Dorin Comaniciu</a>,
                   </span>
                   <span class="author-block">
                     <a href=https://scholar.google.co.uk/citations?user=Z1-KZ8RoM6YC&hl=en target="_blank">Florin C. Ghesu</a>
@@ -81,14 +80,14 @@ analytics: toward robust device trackers</h1>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Friedrich Alexander University Erlangen Nurnberg<br> Siemens Healthineers, Digital Technology and Innovation <br> Journal of Medical Imaging </span>
+                    <span class="author-block">Friedrich Alexander University Erlangen Nurnberg<br> Siemens Healthineers, Digital Technology and Innovation <br> MICCAI 2024 </span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href=https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging/volume-11/issue-3/035001/Self-supervised-learning-for-interventional-image-analytics--toward-robust/10.1117/1.JMI.11.3.035001.full target="_blank"
+                        <a href=https://link.springer.com/chapter/10.1007/978-3-031-72089-5_3 target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -112,7 +111,7 @@ analytics: toward robust device trackers</h1>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href=https://arxiv.org/abs/2405.01156 target="_blank"
+                  <a href=https://arxiv.org/abs/2501.12958 target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -128,6 +127,22 @@ analytics: toward robust device trackers</h1>
   </div>
 </section>
 
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/miccai_presentv2.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Challenges in tracking small objects under occlusion and distractions in Angiography and robust performance of our model under such challenging conditions
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
 
 
 
@@ -139,7 +154,7 @@ analytics: toward robust device trackers</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            An accurate detection and tracking of devices such as guiding catheters in live X-ray image acquisitions is an essential prerequisite for endovascular cardiac interventions. This information is leveraged for procedural guidance, e.g., directing stent placements. To ensure procedural safety and efficacy, there is a need for high robustness no failures during tracking. To achieve that, one needs to efficiently tackle challenges, such as: device obscuration by contrast agent or other external devices or wires, changes in field-of-view or acquisition angle, as well as the continuous movement due to cardiac and respiratory motion. To overcome the aforementioned challenges, we propose a novel approach to learn spatio-temporal features from a very large data cohort of over 16 million interventional X-ray frames using self-supervision for image sequence data. Our approach is based on a masked image modeling technique that leverages frame interpolation based reconstruction to learn fine inter-frame temporal correspondences. The features encoded in the resulting model are fine-tuned downstream. Our approach achieves state-of-the-art performance and in particular robustness compared to ultra optimized reference solutions (that use multi-stage feature fusion, multi-task and flow regularization). The experiments show that our method achieves 66.31% reduction in maximum tracking error against reference solutions (23.20% when flow regularization is used); achieving a success score of 97.95% at a 3x faster inference speed of 42 frames-per-second (on GPU). The results encourage the use of our approach in various other tasks within interventional image analytics that require effective understanding of spatio-temporal semantics.
+            To restore proper blood flow in blocked coronary arteries via angioplasty procedure, accurate placement of devices such as catheters, balloons, and stents under live fluoroscopy or diagnostic angiography is crucial. Identified balloon markers help in enhancing stent visibility in X-ray sequences, while the catheter tip aids in precise navigation and co-registering vessel structures, reducing the need for contrast in angiography. However, accurate detection of these devices in interventional X-ray sequences faces significant challenges, particularly due to occlusions from contrasted vessels and other devices and distractions from surrounding, resulting in the failure to track such small objects. While most tracking methods rely on spatial correlation of past and current appearance, they often lack strong motion comprehension essential for navigating through these challenging conditions, and fail to effectively detect multiple instances in the scene. To overcome these limitations, we propose a self-supervised learning approach that enhances its spatio-temporal understanding by incorporating supplementary cues and learning across multiple representation spaces on a large dataset. Followed by that, we introduce a generic real-time tracking framework that effectively leverages the pretrained spatio-temporal network and also takes the historical appearance and trajectory data into account. This results in enhanced localization of multiple instances of device landmarks. Our method outperforms state-of-the-art methods in interventional X-ray device tracking, especially stability and robustness, achieving an 87% reduction in max error for balloon marker detection and a 61% reduction in max error for catheter tip detection.
         </div>
       </div>
     </div>
@@ -153,35 +168,23 @@ analytics: toward robust device trackers</h1>
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Methods</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/Others_ours.png" alt="MY ALT TEXT"/>
+        <img src="static/images/MSFT_combined.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Key difference between our approach and previous approaches for tracking.
+          Overview of our methodology.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/example_cases.png" alt="MY ALT TEXT"/>
+        <img src="static/images/Inference_window.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Visualization of tip of the catheter in fluoroscopy, angiography, and cases with other devices.
+          Real-time updates for real-time tracking of balloon markers and catheter tip in angiography
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/FI_autoencoder.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Overview of our framework.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/Masking.png" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Frame Interpolation based masking strategy for effective temporal understanding.
-      </h2>
-    </div>
+    
   </div>
 </div>
 </div>
@@ -189,22 +192,7 @@ analytics: toward robust device trackers</h1>
 <!-- End image carousel -->
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/JMI_fimae_tracking02.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Summary of the challenges that occur in tracking catheter tip in Angiography and the results of our approach.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+
 
 
 

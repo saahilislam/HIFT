@@ -1,1 +1,1 @@
-Self-supervised learning for interventional image analytics: toward robust device trackers
+A Novel Tracking Framework for Devices in X-ray Leveraging Supplementary Cue-Driven Self-Supervised Features
